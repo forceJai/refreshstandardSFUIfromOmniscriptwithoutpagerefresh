@@ -1,0 +1,10 @@
+<template>
+    <lightning-button label="Save" variant="brand" onclick={SaveDataEvent}>
+    </lightning-button> 
+    <!--Below Spinner is for IP to finish commit-->     
+    <div class="spinner">
+            <template if:true={processingIP}>
+            <lightning-spinner alternative-text="Loading" size="medium" variant="brand"></lightning-spinner>
+            </template>
+    </div>
+</template>
